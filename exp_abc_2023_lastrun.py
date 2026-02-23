@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on November 17, 2025, at 15:19
+    on December 09, 2025, at 19:15
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1286,6 +1286,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     question_counter += 1
     current_letter = chr(64 + question_counter)  # 65 is ASCII for 'A'
     question_text = 'Questionnaire: ' + current_letter
+    
+    outlet.push_sample(x=[100+question_counter])
     text_question_number.setText(question_text)
     exp_end_bip.setSound('sound/bip.wav', secs=1.0, hamming=True)
     exp_end_bip.setVolume(1.0, log=False)
@@ -1493,6 +1495,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     thisExp.addData('task_end_question.stopped', globalClock.getTime())
+    # Run 'End Routine' code from code_questionaire
+    outlet.push_sample(x=[199])
     exp_end_bip.pause()  # ensure sound has stopped at end of Routine
     # check responses
     if key_q_stress.keys in ['', [], None]:  # No response was made
@@ -2160,6 +2164,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     question_counter += 1
     current_letter = chr(64 + question_counter)  # 65 is ASCII for 'A'
     question_text = 'Questionnaire: ' + current_letter
+    
+    outlet.push_sample(x=[100+question_counter])
     text_question_number.setText(question_text)
     exp_end_bip.setSound('sound/bip.wav', secs=1.0, hamming=True)
     exp_end_bip.setVolume(1.0, log=False)
@@ -2367,6 +2373,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     thisExp.addData('task_end_question.stopped', globalClock.getTime())
+    # Run 'End Routine' code from code_questionaire
+    outlet.push_sample(x=[199])
     exp_end_bip.pause()  # ensure sound has stopped at end of Routine
     # check responses
     if key_q_stress.keys in ['', [], None]:  # No response was made
@@ -2601,6 +2609,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     question_counter += 1
     current_letter = chr(64 + question_counter)  # 65 is ASCII for 'A'
     question_text = 'Questionnaire: ' + current_letter
+    
+    outlet.push_sample(x=[100+question_counter])
     text_question_number.setText(question_text)
     exp_end_bip.setSound('sound/bip.wav', secs=1.0, hamming=True)
     exp_end_bip.setVolume(1.0, log=False)
@@ -2808,6 +2818,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     thisExp.addData('task_end_question.stopped', globalClock.getTime())
+    # Run 'End Routine' code from code_questionaire
+    outlet.push_sample(x=[199])
     exp_end_bip.pause()  # ensure sound has stopped at end of Routine
     # check responses
     if key_q_stress.keys in ['', [], None]:  # No response was made
@@ -3404,6 +3416,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     question_counter += 1
     current_letter = chr(64 + question_counter)  # 65 is ASCII for 'A'
     question_text = 'Questionnaire: ' + current_letter
+    
+    outlet.push_sample(x=[100+question_counter])
     text_question_number.setText(question_text)
     exp_end_bip.setSound('sound/bip.wav', secs=1.0, hamming=True)
     exp_end_bip.setVolume(1.0, log=False)
@@ -3611,6 +3625,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     thisExp.addData('task_end_question.stopped', globalClock.getTime())
+    # Run 'End Routine' code from code_questionaire
+    outlet.push_sample(x=[199])
     exp_end_bip.pause()  # ensure sound has stopped at end of Routine
     # check responses
     if key_q_stress.keys in ['', [], None]:  # No response was made
@@ -3845,6 +3861,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     question_counter += 1
     current_letter = chr(64 + question_counter)  # 65 is ASCII for 'A'
     question_text = 'Questionnaire: ' + current_letter
+    
+    outlet.push_sample(x=[100+question_counter])
     text_question_number.setText(question_text)
     exp_end_bip.setSound('sound/bip.wav', secs=1.0, hamming=True)
     exp_end_bip.setVolume(1.0, log=False)
@@ -4052,6 +4070,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     thisExp.addData('task_end_question.stopped', globalClock.getTime())
+    # Run 'End Routine' code from code_questionaire
+    outlet.push_sample(x=[199])
     exp_end_bip.pause()  # ensure sound has stopped at end of Routine
     # check responses
     if key_q_stress.keys in ['', [], None]:  # No response was made
@@ -4285,6 +4305,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     question_counter += 1
     current_letter = chr(64 + question_counter)  # 65 is ASCII for 'A'
     question_text = 'Questionnaire: ' + current_letter
+    
+    outlet.push_sample(x=[100+question_counter])
     text_question_number.setText(question_text)
     exp_end_bip.setSound('sound/bip.wav', secs=1.0, hamming=True)
     exp_end_bip.setVolume(1.0, log=False)
@@ -4492,6 +4514,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     thisExp.addData('task_end_question.stopped', globalClock.getTime())
+    # Run 'End Routine' code from code_questionaire
+    outlet.push_sample(x=[199])
     exp_end_bip.pause()  # ensure sound has stopped at end of Routine
     # check responses
     if key_q_stress.keys in ['', [], None]:  # No response was made
@@ -4726,6 +4750,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     question_counter += 1
     current_letter = chr(64 + question_counter)  # 65 is ASCII for 'A'
     question_text = 'Questionnaire: ' + current_letter
+    
+    outlet.push_sample(x=[100+question_counter])
     text_question_number.setText(question_text)
     exp_end_bip.setSound('sound/bip.wav', secs=1.0, hamming=True)
     exp_end_bip.setVolume(1.0, log=False)
@@ -4933,6 +4959,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     thisExp.addData('task_end_question.stopped', globalClock.getTime())
+    # Run 'End Routine' code from code_questionaire
+    outlet.push_sample(x=[199])
     exp_end_bip.pause()  # ensure sound has stopped at end of Routine
     # check responses
     if key_q_stress.keys in ['', [], None]:  # No response was made
@@ -5168,6 +5196,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     question_counter += 1
     current_letter = chr(64 + question_counter)  # 65 is ASCII for 'A'
     question_text = 'Questionnaire: ' + current_letter
+    
+    outlet.push_sample(x=[100+question_counter])
     text_question_number.setText(question_text)
     exp_end_bip.setSound('sound/bip.wav', secs=1.0, hamming=True)
     exp_end_bip.setVolume(1.0, log=False)
@@ -5375,6 +5405,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     thisExp.addData('task_end_question.stopped', globalClock.getTime())
+    # Run 'End Routine' code from code_questionaire
+    outlet.push_sample(x=[199])
     exp_end_bip.pause()  # ensure sound has stopped at end of Routine
     # check responses
     if key_q_stress.keys in ['', [], None]:  # No response was made
