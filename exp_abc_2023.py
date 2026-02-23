@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on February 23, 2026, at 17:28
+    on February 23, 2026, at 16:50
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -111,7 +111,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\Code\\github\\breathwork-cognitive-psychopy\\exp_abc_2023_lastrun.py',
+        originPath='C:\\Code\\github\\breathwork-cognitive-psychopy\\exp_abc_2023.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -162,7 +162,7 @@ def setupWindow(expInfo=None, win=None):
     if win is None:
         # if not given a window to setup, make one
         win = visual.Window(
-            size=[1920, 1080], fullscr=False, screen=0,
+            size=[1536, 864], fullscr=True, screen=0,
             winType='pyglet', allowStencil=True,
             monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
@@ -179,7 +179,7 @@ def setupWindow(expInfo=None, win=None):
         win.backgroundImage = ''
         win.backgroundFit = 'none'
         win.units = 'height'
-    win.mouseVisible = True
+    win.mouseVisible = False
     win.hideMessage()
     return win
 
@@ -2410,7 +2410,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     _key_resp_3_allKeys = []
     # Run 'Begin Routine' code from t_begin_3
     breathing_instr_counter += 2
-    outlet.push_sample(x=[int(breathing_instr_counter)])
+    outlet.push_sample(x=[int(breathing_counter)])
     # keep track of which components have finished
     _03_05_07_breathing_instrComponents = [text_3, key_resp_3]
     for thisComponent in _03_05_07_breathing_instrComponents:
@@ -2933,8 +2933,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     License: GNU General Public License (GPLv3)
     """
     import random
-    outlet.push_sample(x=[41])
-    
     
     # Initialize variables
     current_number = random.randint(1000, 1999)
@@ -3138,8 +3136,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     )
     
     # Trigger for start of task
-    # if 'outlet' in globals() and outlet is not None:
-    #     outlet.push_sample(x=[41])
+    if 'outlet' in globals() and outlet is not None:
+        outlet.push_sample(x=[41])
     
     # Main loop for task
     while True:
@@ -3670,7 +3668,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     _key_resp_3_allKeys = []
     # Run 'Begin Routine' code from t_begin_3
     breathing_instr_counter += 2
-    outlet.push_sample(x=[int(breathing_instr_counter)])
+    outlet.push_sample(x=[int(breathing_counter)])
     # keep track of which components have finished
     _03_05_07_breathing_instrComponents = [text_3, key_resp_3]
     for thisComponent in _03_05_07_breathing_instrComponents:
@@ -4560,7 +4558,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     _key_resp_3_allKeys = []
     # Run 'Begin Routine' code from t_begin_3
     breathing_instr_counter += 2
-    outlet.push_sample(x=[int(breathing_instr_counter)])
+    outlet.push_sample(x=[int(breathing_counter)])
     # keep track of which components have finished
     _03_05_07_breathing_instrComponents = [text_3, key_resp_3]
     for thisComponent in _03_05_07_breathing_instrComponents:
